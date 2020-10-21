@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:paddingTop="16dp"
+    android:paddingHorizontal="40dp"
+    android:background="@drawable/back3">
+
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Attendance System"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heading2"
+        android:layout_marginTop="100dp"
+        android:text="Add Student"
+        android:textSize="24sp"
+        android:background="@drawable/custom_button"
+        />
+
+    <Button
+        android:id="@+id/btnattendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heading2"
+        android:layout_marginTop="200dp"
+        android:text="Take Attendance"
+        android:textSize="24sp"
+        android:background="@drawable/custom_button"
+        />
+
+    <Button
+        android:id="@+id/btnviewattend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heading2"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_button"
+        android:text="View Attendance"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/heading2"
+        android:layout_marginTop="400dp"
+        android:text="Logout"
+        android:textSize="24sp"
+        android:background="@drawable/custom_button"
+        />
+</RelativeLayout>

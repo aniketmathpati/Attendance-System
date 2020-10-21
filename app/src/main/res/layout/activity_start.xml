@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".StartActivity"
+    android:background="@drawable/back3">
+
+    <TextView
+        android:id="@+id/welcome_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" WELCOME "
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="italic"
+        />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome_label"
+        android:background="@drawable/custom_button"
+        />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"/>
+
+    <TextView
+        android:id="@+id/connalert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Check network connection and restart app"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/btnregister"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

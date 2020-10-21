@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="TextView1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rollNo"
+        android:layout_weight="66.6"
+        android:background="@color/colorYellow"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33.3"
+        android:background="@color/colorYellow">
+
+        <TextView
+            android:gravity="center"
+            android:text="TextView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/name"/>
+
+<!--        <TextView-->
+<!--            android:gravity="center"-->
+<!--            android:text="TextView3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_below="@+id/textView2"/>-->
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="present"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <RadioButton
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="absent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
